@@ -6,7 +6,7 @@ class Fabricante extends Model {
 
 	protected $table = "fabricante";
 
-	protected $fillable = array('color', 'cilindraje', 'peso');
+	protected $fillable = array('nombre', 'telefono');
 
 	public function vehiculos(){
 		$this->hasMany("Vehiculo");

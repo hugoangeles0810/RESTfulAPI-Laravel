@@ -8,7 +8,7 @@ class Vehiculo extends Model{
 
 	protected $primaryKey = 'serie';
 
-	protected $fillable = array('nombre', 'telefono');
+	protected $fillable = array('color', 'cilindraje', 'peso', 'fabricante_id');
 
 	public function fabricante(){
 		$this->belongsTo('Fabricante');

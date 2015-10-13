@@ -12,7 +12,7 @@ class Vehiculos extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('vehiculo', function(Blueprint $table)
+		Schema::create('vehiculos', function(Blueprint $table)
 		{
 			$table->increments('serie');
 			$table->string('color');
@@ -20,7 +20,7 @@ class Vehiculos extends Migration {
 			$table->integer('potencia');
 			$table->float('peso');
 			$table->integer('fabricante_id')->unsigned();
-			$table->foreign('fabricante_id')->references('id')->on('fabricante');
+			$table->foreign('fabricante_id')->references('id')->on('fabricantes');
 			$table->timestamps();
 		});
 	}

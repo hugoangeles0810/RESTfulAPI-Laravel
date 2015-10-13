@@ -12,7 +12,7 @@ class Fabricantes extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('fabricante', function(Blueprint $table)
+		Schema::create('fabricantes', function(Blueprint $table)
 		{
 			$table->increments('id');
 			$table->string('nombre');
@@ -28,7 +28,7 @@ class Fabricantes extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('fabricante');
+		Schema::drop('fabricantes');
 	}
 
 }
